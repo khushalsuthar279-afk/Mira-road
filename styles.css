@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'inter' Sans-Serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /* =======================
@@ -77,7 +77,7 @@ body {
     margin-left: 10px;
     font-size: 24px;
     font-weight: 800;
-    font-family: 'inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     letter-spacing: 1px;
     color: #ffffff;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
@@ -138,16 +138,16 @@ body {
 .main-text {
     margin-top: 40px;
     font-size: 36px;
-    color:black;
-    font-family: 'playfair dispaly',serif;
+    color: black;
+    font-family: 'Playfair Display', serif;
     font-weight: normal;
 }
 
 .sub-text {
     margin: 15px 0 45px;
     font-size: 18px;
-    font-family: 'playfair dispaly',serif;
-    color:black;
+    font-family: 'Playfair Display', serif;
+    color: black;
 }
 
 /* =======================
@@ -167,7 +167,7 @@ body {
     padding: 12px;
     border-radius: 20px;
 
-    background: rgba(0,0,0,0.18);   /* reduced darkness */
+    background: rgba(0,0,0,0.18);
     backdrop-filter: blur(2px);
 
     text-decoration: none;
@@ -180,7 +180,7 @@ body {
 /* CARD IMAGE */
 .card img {
     width: 290px;
-    height: 180px;          /* fixed image size */
+    height: 180px;
     object-fit: cover;
     border-radius: 14px;
 }
@@ -201,54 +201,51 @@ body {
         0 0 16px rgba(255,204,102,0.3);
 }
 
-.fonta{
-  font-family: 'Playfair Display', serif;
-  font-weight: normal;
-  color:b;
-  
-  
-}
-/* FOOTER STYLING */
-
-
-/* Footer description */
-
-.my{
-  font-weight:bold;
- color:Black;"
+/* =======================
+   TEXT HELPERS
+======================= */
+.fonta {
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
 }
 
-#mira{
-  color:black;
-  font-weight: 900;
+/* =======================
+   FOOTER
+======================= */
+.my {
+    font-weight: bold;
+    color: black;
 }
+
+#mira {
+    color: black;
+    font-weight: 900;
+}
+
 #love {
-  list-style: none;
+    list-style: none;
 }
 
 #love li::before {
-  content: "- ";
-  font-size: 1.2em;
-  margin-right: 6px;
+    content: "- ";
+    font-size: 1.2em;
+    margin-right: 6px;
 }
-*{
-  font-family: 'playfair dispaly',serif;
-  font-weight: normal;
 
-}
 .site-footer {
-    background-color: rgba(0, 0, 0, 0.85);  /* dark transparent */
-    color: #FFD700;                         /* saffron-gold text */
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #FFD700;
     text-align: center;
     padding: 25px 20px;
     margin-top: 50px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     letter-spacing: 0.5px;
-    box-shadow: 0 -4px 10px rgba(0,0,0,0.3); /* subtle top shadow */
-    border-top-left-radius: 20px;           /* rounded top corners */
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+    border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 .footer-description {
     line-height: 1.6;
 }
