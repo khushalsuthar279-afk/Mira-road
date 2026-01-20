@@ -5,21 +5,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
 }
 
 /* =======================
-   BODY BACKGROUND
+   BODY
 ======================= */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url("Polish_20260103_102441680.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-    padding-top: 120px;   /* space for fixed navbar */
+    padding-top: 120px;
 }
 
 /* =======================
@@ -38,120 +36,56 @@ body {
     padding: 12px 22px;
 
     background-image:
-        url("hero-image.png"),
+        url("6d106398-6fdb-4238-af22-17a8f8434ae7.png"),
         url("images (3).png");
 
-    background-size:
-        200px auto,
-        cover;
-
-    background-position:
-        right -25px top -40px,
-        center;
-
+    background-size: 200px auto, cover;
+    background-position: right -25px top -40px, center;
     background-repeat: no-repeat, no-repeat;
 
     box-shadow: 0 6px 15px rgba(0,0,0,0.35);
     z-index: 1000;
 }
 
-/* =======================
-   NAVBAR LEFT
-======================= */
 .left {
     display: flex;
     align-items: center;
 }
 
-/* LOGO */
 .logo {
     width: 75px;
     height: 75px;
     border-radius: 50%;
     object-fit: cover;
-    transform: translateX(-20px);
 }
 
-/* BRAND TEXT */
 .brand {
     margin-left: 10px;
     font-size: 24px;
     font-weight: 800;
     font-family: 'Inter', sans-serif;
-    letter-spacing: 1px;
-    color: #ffffff;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-    transform: translateX(-25px);
+    color: #fff;
 }
 
 /* =======================
-   NAVBAR RIGHT
-======================= */
-.right {
-    position: relative;
-}
-
-/* HAMBURGER */
-.hamburger {
-    cursor: pointer;
-    padding: 6px;
-}
-
-.hamburger div {
-    width: 26px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-    border-radius: 2px;
-}
-
-/* MENU */
-.menu {
-    list-style: none;
-    position: absolute;
-    top: 45px;
-    right: 0;
-    background: rgba(0,0,0,0.85);
-    border-radius: 6px;
-    padding: 10px 15px;
-    min-width: 160px;
-    display: none;
-}
-
-.menu li {
-    margin: 10px 0;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-}
-
-.menu a:hover {
-    color: #ffcc66;
-}
-
-/* =======================
-   PAGE TEXT
+   TEXT
 ======================= */
 .main-text {
     margin-top: 40px;
     font-size: 36px;
     color: black;
     font-family: 'Playfair Display', serif;
-    font-weight: normal;
 }
 
 .sub-text {
     margin: 15px 0 45px;
     font-size: 18px;
-    font-family: 'Playfair Display', serif;
     color: black;
+    font-family: 'Playfair Display', serif;
 }
 
 /* =======================
-   CARD SECTION (VERTICAL)
+   CARDS
 ======================= */
 .cards {
     display: flex;
@@ -161,87 +95,38 @@ body {
     margin-bottom: 80px;
 }
 
-/* CARD */
 .card {
-    width: 320px;
+    width: 90%;
+    max-width: 320px;
     padding: 12px;
     border-radius: 20px;
-
     background: rgba(0,0,0,0.18);
-    backdrop-filter: blur(2px);
-
     text-decoration: none;
     color: white;
-
     box-shadow: 0 10px 22px rgba(0,0,0,0.45);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* CARD IMAGE */
 .card img {
-    width: 290px;
-    height: 180px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
     border-radius: 14px;
 }
 
-/* CARD TEXT */
 .card p {
     margin-top: 12px;
     font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-/* HOVER EFFECT */
-.card:hover {
-    transform: translateY(-6px);
-    box-shadow:
-        0 16px 32px rgba(0,0,0,0.7),
-        0 0 16px rgba(255,204,102,0.3);
-}
-
-/* =======================
-   TEXT HELPERS
-======================= */
-.fonta {
     font-family: 'Playfair Display', serif;
-    font-weight: normal;
 }
 
 /* =======================
    FOOTER
 ======================= */
-.my {
-    font-weight: bold;
-    color: black;
-}
-
-#mira {
-    color: black;
-    font-weight: 900;
-}
-
-#love {
-    list-style: none;
-}
-
-#love li::before {
-    content: "- ";
-    font-size: 1.2em;
-    margin-right: 6px;
-}
-
 .site-footer {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0,0,0,0.85);
     color: #FFD700;
     text-align: center;
     padding: 25px 20px;
-    margin-top: 50px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    letter-spacing: 0.5px;
-    box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -255,34 +140,15 @@ body {
 ======================= */
 @media (max-width: 768px) {
 
-    body {
-        padding-top: 120px;
-    }
-
     .brand {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .main-text {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .sub-text {
         font-size: 16px;
-    }
-
-    .card {
-        width: 90%;
-        max-width: 320px;
-    }
-
-    .card img {
-        width: 100%;
-        height: auto;
-    }
-
-    .navbar {
-        height: auto;
-        padding: 10px 15px;
     }
 }
